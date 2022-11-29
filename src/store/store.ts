@@ -9,7 +9,7 @@ import { liveblocksEnhancer } from "@liveblocks/redux";
 import { createClient } from '@liveblocks/client';
 const client = createClient({
   // publicApiKey: process.env.LIVEBLOCKS_PUBLIC_KEY!,
-  publicApiKey: 'pk_dev_4ci3LuZOviNnHPwslxyCuSb4f6sIm9OLSgwkptMLWFyCSCklmWUv4PL0VKPzV7fa',
+  publicApiKey: '',
 });
 
 	const sagaMiddleware = createSagaMiddleware();

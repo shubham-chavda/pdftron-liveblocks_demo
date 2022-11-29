@@ -12,6 +12,11 @@
 React | Redux | Redux-Saga | immer | TypeScript
 ```
 
+## Configuration Needed
+
+```markdown
+Add liveblocks public key to ./src/store/store file
+```
 Package used
 
 ```javascript
