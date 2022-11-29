@@ -1,0 +1,114 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import './theme.less';
+@import './utilities.less';
+
+html {
+	font-size: 16px;
+	overflow: hidden;
+}
+
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	background: @site-background-color;
+}
+
+* {
+	outline: 0;
+	// -webkit-user-select: none;
+	// -khtml-user-select: none;
+	// -moz-user-select: none;
+	// -o-user-select: none;
+	// user-select: none;
+	box-sizing: border-box;
+}
+
+*:not(input) {
+	// -webkit-user-select: none;
+	// -khtml-user-select: none;
+	// -moz-user-select: none;
+	// -ms-user-select: none;
+	// user-select: none;
+	-webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+*:not(input.field) {
+	// -webkit-user-select: none;
+	// -khtml-user-select: none;
+	// -moz-user-select: none;
+	// -ms-user-select: none;
+	// user-select: none;
+	-webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+input[type='password']:-webkit-autofill,
+input[type='password']:-webkit-autofill:hover,
+input[type='password']:-webkit-autofill:focus,
+input[type='password']:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0px 1000px #f5f7f9 inset !important;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: @thumbColor;
+	border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: fade(@thumbColor, 80%);
+}
+
+::selection {
+	background: #2f84e6;
+}
+
+/* For Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+select {
+	// appearance: none;
+	// outline: 0;
+	// cursor: pointer;
+	// border-radius: 3px;
+	// border:none;
+	outline: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	&::-ms-expand {
+		display: none;
+	}
+
+	-ms-appearance: none;
+	background: white;
+	background-image: none;
+}
