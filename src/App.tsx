@@ -21,7 +21,7 @@ const Home = () => {
 	const [isDocumentOpen, setDocumentOpen] = useState<boolean>(false);
 
 	// --liveblocks parameter to get other users cursor position
-	const others = useAppSelector((state) => state.liveblocks.others);
+	const others = useAppSelector((state) => state.others);
 	console.log('🚀 ~ file: Home.tsx ~ line 20 ~ Home ~ others', others);
 
 	const dispatch = useAppDispatch();
@@ -61,10 +61,10 @@ const Home = () => {
 
 			// --Mouse event of iframe that we got from pdftron
 			documentViewer.addEventListener('mouseMove', (e) => {
-				console.log(
-					'🚀 ~ file: Home.tsx ~ line 56 ~ documentViewer.addEventListener ~ e',
-					e
-				);
+				// console.log(
+				// 	'🚀 ~ file: Home.tsx ~ line 56 ~ documentViewer.addEventListener ~ e',
+				// 	e
+				// );
 				dispatch(setCursor({ x: e.clientX, y: e.clientY }));
 			});
 		});
