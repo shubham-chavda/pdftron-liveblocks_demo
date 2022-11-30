@@ -14,7 +14,7 @@ export const initialState: Immutable<IGlobalState> = {
 };
 
 export const LiveblocksReducer = createSlice({
-	name: 'state',
+	name: 'nested',
 	initialState,
 	reducers: {
 		setCursor: (state, action) => {

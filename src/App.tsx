@@ -21,7 +21,7 @@ const Home = () => {
 	const [isDocumentOpen, setDocumentOpen] = useState<boolean>(false);
 
 	// --liveblocks parameter to get other users cursor position
-	const others = useAppSelector((state) => state.others);
+	const others = useAppSelector((state) => state.nested.others);
 	console.log('🚀 ~ file: Home.tsx ~ line 20 ~ Home ~ others', others);
 
 	const dispatch = useAppDispatch();

@@ -5,7 +5,7 @@ import { reducer } from './reducer';
 import { liveblocksEnhancer } from '@liveblocks/redux';
 import { createClient } from '@liveblocks/client';
 const client = createClient({
-	publicApiKey: 'pk_INSERT_HERE'
+	publicApiKey: 'pk_test_mu6YG4WfdeQ_PBe3KZt1Jw-X'
 });
 
 const rootReducer = (state: any, action: any) => {
@@ -25,7 +25,7 @@ const store = configureStore({
 	enhancers: [
 		liveblocksEnhancer({
 			client,
-			presenceMapping: { cursor: true }
+			presenceMapping: { nested: true }
 		})
 	]
 });
