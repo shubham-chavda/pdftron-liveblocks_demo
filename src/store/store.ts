@@ -5,7 +5,7 @@ import { reducer } from './reducer';
 import { liveblocksEnhancer } from '@liveblocks/redux';
 import { createClient } from '@liveblocks/client';
 const client = createClient({
-	publicApiKey: 'pk_test_mu6YG4WfdeQ_PBe3KZt1Jw-X'
+	publicApiKey: 'pk_INSERT_HERE'
 });
 
 const rootReducer = (state: any, action: any) => {
