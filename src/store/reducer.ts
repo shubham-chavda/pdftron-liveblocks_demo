@@ -1,10 +1,4 @@
-import { combineReducers } from '@reduxjs/toolkit';
+import { combineReducers } from 'redux';
 import LiveblocksReducer from './Liveblocks/LiveblocksReducer';
 
-export const initialState = {
-};
-
-export const reducer = combineReducers({
-	liveblocks:	LiveblocksReducer,
-});
-
+export const reducer = combineReducers({ nested: LiveblocksReducer });
